@@ -15,8 +15,8 @@ router.get('/', async (req, res) => {
         attributes: ['id', 'category_name']
         },
         {
-          model: ProductTag,
-          attributes: ['id', 'product_id', 'tag_id']
+          model: Tag,
+          attributes: ['id', 'tag_name']
         }
     ]
     });
@@ -38,8 +38,8 @@ router.get('/:id', async (req, res) => {
           attributes: ['id', 'category_name']
         },
         {
-          model: ProductTag,
-          attributes: ['id', 'product_id', 'tag_id']
+          model: Tag,
+          attributes: ['id', 'tag_name']
         }
     ]
     });
